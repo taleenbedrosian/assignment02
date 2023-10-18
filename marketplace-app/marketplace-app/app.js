@@ -7,6 +7,7 @@ const productRoutes = require('./productRoutes');
 app.use(cors());
 app.use(express.json());
 app.use('/api', productRoutes);
+app.use('/api', id);
 
 app.get('/', (req, res) => {
   res.send('Welcome to the DressStore Application');
